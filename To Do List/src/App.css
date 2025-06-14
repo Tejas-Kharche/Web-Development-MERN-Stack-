@@ -1,0 +1,147 @@
+/* Reset box-sizing for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #D2B48C;  /* Tortilla */
+  color: #5A4632;       /* Wood */
+}
+
+/* Container Styles */
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #937a62;   /* Peanut */
+  border-radius: 16px;
+  box-shadow: 0 4px 20px #A67B5B;  /* Wood-colored shadow */
+  text-align: center;
+}
+
+/* Main Heading */
+.container h1.main-heading {
+  color: #5A4632;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-shadow: 0 0 20px #A67B5B;
+}
+
+/* List Heading */
+.container h2.list-heading {
+  color: #5A4632;
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+  text-shadow: 0 0 10px #A67B5B;
+  text-align: center;
+}
+
+/* Labels for inputs */
+.container label {
+  color: #5A4632;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: block;
+  text-shadow: 0 0 5px #A67B5B;
+}
+
+/* Input Styles */
+.container input {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #5A4632;
+  outline: none;
+  background: #D2B48C;
+  color: #5A4632;
+  box-shadow: 0 0 10px #A67B5B;
+  transition: border 0.3s ease, transform 0.3s ease;
+  width: 100%;
+}
+
+.container input:focus {
+  border: 1px solid #5A4632;
+  transform: translateY(-2px);
+}
+
+/* Button Styles */
+.container button {
+  padding: 10px 20px;
+  background: #D2B48C;
+  color: #5A4632;
+  border: 1px solid #5A4632;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #A67B5B;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container button:hover {
+  background: #A67B5B;
+  color: #D2B48C;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px #A67B5B;
+}
+
+/* To-Do List Styles */
+.todo-list {
+  padding-bottom: 20px;
+}
+
+/* To-Do Item Styles */
+.todo-item {
+  background: #937a62;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #A67B5B;
+  margin-bottom: 25px;
+  transform: translateY(0);
+  transition: transform 0.5s ease, box-shadow 0.5s ease,opacity 0.5s ease;
+  position: relative;
+}
+
+.todo-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px #A67B5B;
+}
+
+/* Delete button within each item */
+.todo-item button {
+  background: #D2B48C;
+  color: #5A4632;
+  padding: 6px 12px;
+  border: 1px solid #5A4632;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #A67B5B;
+  transition: background 0.3s ease, transform 0.5s ease, box-shadow 0.5s ease,opacity 0.5s ease;
+}
+
+.todo-item button:hover {
+  background: #5A4632;
+  color: #D2B48C;
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px #5A4632;
+}
+
+/* Fade-out delete animation */
+.todo-item.fade-out {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+/* Item number */
+.todo-item p:first-child {
+  color: #5A4632;
+}
+
+/* Item Title */
+.todo-item h1 {
+  margin-bottom: 12px;
+  color: #5A4632;
+  text-shadow: 0 0 10px #A67B5B;
+}
